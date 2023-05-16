@@ -25,13 +25,13 @@
                         @* note setting initial value of aria-checked using aria_checked*@
                         @Html.HiddenFor(item => @Model.CheckModels[index].Id)
                         @Html.CheckBoxFor(item => @Model.CheckModels[index].Checked,
-                    new
-                    {
-                    @id = @Model.CheckModels[index].Id,
-                    @class = "form-check-input",
-                    aria_checked = @Model.CheckModels[index].Checked.ToString().ToLower(),
-                    aria_label = @Model.CheckModels[index].Name,
-                    })
+                        new
+                        {
+                            @id = @Model.CheckModels[index].Id,
+                            @class = "form-check-input",
+                            aria_checked = @Model.CheckModels[index].Checked.ToString().ToLower(),
+                            aria_label = @Model.CheckModels[index].Name,
+                        })
 
                         <input type="hidden" asp-for="@Model.CheckModels[index].Name" />
                         <label class="form-check-label"
