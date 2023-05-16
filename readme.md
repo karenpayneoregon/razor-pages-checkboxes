@@ -1,4 +1,4 @@
-# ASP.NET Core working with Checkboxes
+# ASP.NET Core/Razor pages working with Checkboxes
 
 There are two lessons, how to create a list of checkboxes and also how to set aria-checked for each checkbox using JavaScript.
 
@@ -220,3 +220,7 @@ public Task<IActionResult> OnPostResendAsync()
     return Task.FromResult<IActionResult>(RedirectToPage("Index1"));
 }
 ```
+
+### Source code
+
+Clone the following GitHub [repository](https://github.com/karenpayneoregon/razor-pages-checkboxes).

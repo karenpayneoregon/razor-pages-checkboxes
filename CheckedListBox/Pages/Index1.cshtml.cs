@@ -35,7 +35,10 @@ namespace CheckedListBox.Pages
 
         public Task<IActionResult> OnPostResendAsync()
         {
+            // get checked
             var checkedItems = CheckModels.Where(x => x.Checked).ToList();
+            // get unchecked
+            var notCheckedItems = CheckModels.Where(x => x.Checked == false).ToList();
 
             if (checkedItems.Any())
             {
